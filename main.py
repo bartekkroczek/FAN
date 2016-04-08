@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from psychopy import visual, core, event
-import yaml
-from screen_misc import get_frame_rate, get_screen_res
 from os import path
+
+import yaml
+from psychopy import visual, core
+
+from misc.screen import get_screen_res
 
 STIMULI_PATH = path.join('.', 'stimuli', 'all')
 ABSOLUT_SHIFT = 90
@@ -40,14 +42,18 @@ class StimulusCanvas(object):
 
 
 if __name__ == '__main__':
-    data = yaml.load(open('TestM24.yaml', 'r'))
+    data = yaml.load(open('TestM41.yaml', 'r'))
     prob_no = 2
     data = data['list_of_blocks'][0]['experiment_elements'][prob_no]['matrix_info']
     SCREEN_RES = get_screen_res()
     window = visual.Window(SCREEN_RES.values(), fullscr=True, monitor='TestMonitor',
                            units='pix', screen=0, color='Gainsboro')
 
-    box = data[0]['parameters']
+    # data[1]['parameters'][2], data[1]['parameters'][3] = data[1]['parameters'][3], data[1]['parameters'][2]
+    # for i in range(3, 9):
+    #     data[i]['parameters'][0], data[i]['parameters'][1] = data[i]['parameters'][1], data[i]['parameters'][0]
+
+    print data[0]['parameters']
     A = StimulusCanvas(win=window, figs_desc=data[0]['parameters'], scale=0.8, frame_color=u'black')
     B = StimulusCanvas(win=window, figs_desc=data[1]['parameters'], scale=0.8, frame_color=u'black')
     C = StimulusCanvas(win=window, figs_desc=data[2]['parameters'], scale=0.8, frame_color=u'black')
@@ -69,8 +75,8 @@ if __name__ == '__main__':
     line = visual.Line(window, start=(-600, -550), end=(-600, 550), lineColor=u'black', lineWidth=10)
     line.setAutoDraw(True)
 
-    solutions = [StimulusCanvas(window, data[i]['parameters'], scale=0.8, frame_color=u'crimson') for i in range(3, 9)]
-    solutions[4].frame.setLineColor(u'green')
+    solutions = [StimulusCanvas(window, data[i]['parameters'], scale=0.8, frame_color=u'dimgray') for i in range(3, 9)]
+    solutions[3].frame.setLineColor(u'green')
     [solution.setPos((150, 0)) for solution in solutions]
 
     shifts = [(-SCREEN_RES['width']/4.0, SCREEN_RES['height'] / 6.0), (0, SCREEN_RES['height'] / 6.0), (SCREEN_RES['width']/4.0, SCREEN_RES['height'] / 6.0),
@@ -91,4 +97,4 @@ if __name__ == '__main__':
                                 pos = (4.5 * SCREEN_RES['width']/13.0, -3 * SCREEN_RES['height']/7.0 - 40))
     zatwierdz.setAutoDraw(True)
     window.flip()
-    core.wait(30)
+    core.wait(8)
