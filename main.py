@@ -1,22 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from os import path
-
+from os.path import join
 import yaml
 from psychopy import visual, core
 
 from misc.screen import get_screen_res
 
-STIMULI_PATH = path.join('.', 'stimuli', 'all')
-ABSOLUT_SHIFT = 90
+STIMULI_PATH = join('.', 'stimuli', 'all')
+VISUAL_OFFSET = 90
 
 
 class StimulusCanvas(object):
     def __init__(self, win, figs_desc, scale=1.0, frame_color=u'crimson'):
         self.figures = list()
         self.frame = visual.Rect(win, width=375 * scale, height=375 * scale, lineColor=frame_color, lineWidth=5)
-        shift = ABSOLUT_SHIFT * scale
+        shift = VISUAL_OFFSET * scale
         shifts = [(-shift, shift), (shift, shift), (-shift, -shift), (shift, -shift)]
         for fig_desc, shift in zip(figs_desc, shifts):
             fig_desc['figure'] += 1
@@ -42,7 +41,7 @@ class StimulusCanvas(object):
 
 
 if __name__ == '__main__':
-    data = yaml.load(open('TestM41.yaml', 'r'))
+    data = yaml.load(open(join('problem generator', 'sample problems', 'TestM41.yaml'), 'r'))
     prob_no = 2
     data = data['list_of_blocks'][0]['experiment_elements'][prob_no]['matrix_info']
     SCREEN_RES = get_screen_res()
@@ -79,22 +78,26 @@ if __name__ == '__main__':
     solutions[3].frame.setLineColor(u'green')
     [solution.setPos((150, 0)) for solution in solutions]
 
-    shifts = [(-SCREEN_RES['width']/4.0, SCREEN_RES['height'] / 6.0), (0, SCREEN_RES['height'] / 6.0), (SCREEN_RES['width']/4.0, SCREEN_RES['height'] / 6.0),
-              (-SCREEN_RES['width']/4.0, -SCREEN_RES['height'] / 6.0), (0, -SCREEN_RES['height'] / 6.0), (SCREEN_RES['width']/4.0, -SCREEN_RES['height'] / 6.0)]
+    shifts = [(-SCREEN_RES['width'] / 4.0, SCREEN_RES['height'] / 6.0), (0, SCREEN_RES['height'] / 6.0),
+              (SCREEN_RES['width'] / 4.0, SCREEN_RES['height'] / 6.0),
+              (-SCREEN_RES['width'] / 4.0, -SCREEN_RES['height'] / 6.0), (0, -SCREEN_RES['height'] / 6.0),
+              (SCREEN_RES['width'] / 4.0, -SCREEN_RES['height'] / 6.0)]
     for solution, shift in zip(solutions, shifts):
         solution.setPos(shift)
     [solution.setAutoDraw(True) for solution in solutions]
 
     ma_sie_do2 = visual.TextStim(window, text=u'To: (Choose one)', color=u'black', height=50, wrapWidth=1500,
-                                pos=(50, 2.7 * SCREEN_RES['height'] / 7.0))
+                                 pos=(50, 2.7 * SCREEN_RES['height'] / 7.0))
     ma_sie_do2.setAutoDraw(True)
     pozostalo_ci = visual.TextStim(window, text=u'16 seconds left.', height=50, color=u'black', wrapWidth=1000,
-                                   pos=(-1.5*SCREEN_RES['width']/13.0, -3 * SCREEN_RES['height']/7.0))
+                                   pos=(-1.5 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0))
     pozostalo_ci.setAutoDraw(True)
-    zatwierdz_box = visual.Rect(window, fillColor=u'dimgray', width=600, height=100, pos=(4.5 * SCREEN_RES['width']/13.0, -3 * SCREEN_RES['height']/7.0 - 40), lineColor=u'black')
+    zatwierdz_box = visual.Rect(window, fillColor=u'dimgray', width=600, height=100,
+                                pos=(4.5 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0 - 40),
+                                lineColor=u'black')
     zatwierdz_box.setAutoDraw(True)
     zatwierdz = visual.TextStim(window, text=u'Accept answer', height=50, color=u'ghostwhite', wrapWidth=900,
-                                pos = (4.5 * SCREEN_RES['width']/13.0, -3 * SCREEN_RES['height']/7.0 - 40))
+                                pos=(4.5 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0 - 40))
     zatwierdz.setAutoDraw(True)
     window.flip()
     core.wait(8)
