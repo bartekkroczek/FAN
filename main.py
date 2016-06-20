@@ -3,101 +3,189 @@
 
 from os.path import join
 import yaml
-from psychopy import visual, core
-
+from psychopy import visual, core, logging, event
+import csv
+import codecs
 from misc.screen import get_screen_res
 
 STIMULI_PATH = join('.', 'stimuli', 'all')
-VISUAL_OFFSET = 90
+VISUAL_OFFSET = 120
+TEXT_SIZE = 50
+SCALE = 0.58
+TRIGGER_LIST = []
+
+
+# @atexit.register
+def save_beh_results():
+    with open(join('results', PART_ID + '_beh.csv'), 'w') as beh_file:
+        beh_writer = csv.writer(beh_file)
+        beh_writer.writerows(RESULTS)
+    logging.flush()
+    with open(join('results', PART_ID + '_triggermap.txt'), 'w') as trigger_file:
+        trigger_writer = csv.writer(trigger_file)
+        trigger_writer.writerows(TRIGGER_LIST)
+
+
+def read_text_from_file(file_name, insert=''):
+    """
+    Method that read message from text file, and optionally add some
+    dynamically generated info.
+    :param file_name: Name of file to read
+    :param insert:
+    :return: message
+    """
+    if not isinstance(file_name, str):
+        logging.error('Problem with file reading, filename must be a string')
+        raise TypeError('file_name must be a string')
+    msg = list()
+    with codecs.open(file_name, encoding='utf-8', mode='r') as data_file:
+        for line in data_file:
+            if not line.startswith('#'):  # if not commented line
+                if line.startswith('<--insert-->'):
+                    if insert:
+                        msg.append(insert)
+                else:
+                    msg.append(line)
+    return ''.join(msg)
+
+
+def check_exit(key='f7'):
+    stop = event.getKeys(keyList=[key])
+    if len(stop) > 0:
+        logging.critical('Experiment finished by user! {} pressed.'.format(key))
+        exit(1)
+
+
+def show_info(win, file_name, insert=''):
+    """
+    Clear way to show info message into screen.
+    :param win:
+    :return:
+    """
+    msg = read_text_from_file(file_name, insert=insert)
+    msg = visual.TextStim(win, color='black', text=msg, height=TEXT_SIZE - 10, wrapWidth=SCREEN_RES['width'])
+    msg.draw()
+    win.flip()
+    key = event.waitKeys(keyList=['f7', 'return', 'space'])
+    if key == ['f7']:
+        abort_with_error('Experiment finished by user on info screen! F7 pressed.')
+    win.flip()
+
+
+def abort_with_error(err):
+    logging.critical(err)
+    raise Exception(err)
 
 
 class StimulusCanvas(object):
-    def __init__(self, win, figs_desc, scale=1.0, frame_color=u'crimson'):
-        self.figures = list()
-        self.frame = visual.Rect(win, width=375 * scale, height=375 * scale, lineColor=frame_color, lineWidth=5)
-        shift = VISUAL_OFFSET * scale
-        shifts = [(-shift, shift), (shift, shift), (-shift, -shift), (shift, -shift)]
-        for fig_desc, shift in zip(figs_desc, shifts):
+    def __init__(self, win, figs_desc, scale=1.0, frame_color=u'crimson', pos=None):
+        self._figures = list()
+        self._frame = visual.Rect(win, width=375 * scale, height=375 * scale, lineColor=frame_color, lineWidth=5)
+        inner_shift = 90 * scale
+        shifts = [(-inner_shift, inner_shift), (inner_shift, inner_shift), (-inner_shift, -inner_shift),
+                  (inner_shift, -inner_shift)]
+        for fig_desc, inner_shift in zip(figs_desc, shifts):
             fig_desc['figure'] += 1
             fig = "{figure}_{brightness}_{frame}_{rotation}.png".format(**fig_desc)
-            fig = path.join(STIMULI_PATH, fig)
+            fig = join(STIMULI_PATH, fig)
             fig = visual.ImageStim(win, fig, interpolate=True)
             fig.size = fig.size[0] * scale, fig.size[1] * scale
-            fig.pos += shift
-            self.figures.append(fig)
+            fig.pos += inner_shift
+            self._figures.append(fig)
+        if pos:
+            self.setPos(pos)
+
+    def setFrameColor(self, color):
+        self._frame.setLineColor(color)
 
     def setAutoDraw(self, draw):
-        self.frame.setAutoDraw(draw)
-        [x.setAutoDraw(draw) for x in self.figures]
+        self._frame.setAutoDraw(draw)
+        [x.setAutoDraw(draw) for x in self._figures]
 
     def draw(self):
-        self.frame.draw()
-        [x.draw() for x in self.figures]
+        self._frame.draw()
+        [x.draw() for x in self._figures]
 
     def setPos(self, pos):
-        self.frame.pos += pos
-        for fig in self.figures:
+        self._frame.pos += pos
+        for fig in self._figures:
             fig.pos += pos
 
 
 if __name__ == '__main__':
     data = yaml.load(open(join('problem generator', 'sample problems', 'TestM41.yaml'), 'r'))
-    prob_no = 2
-    data = data['list_of_blocks'][0]['experiment_elements'][prob_no]['matrix_info']
     SCREEN_RES = get_screen_res()
     window = visual.Window(SCREEN_RES.values(), fullscr=True, monitor='TestMonitor',
                            units='pix', screen=0, color='Gainsboro')
 
-    # data[1]['parameters'][2], data[1]['parameters'][3] = data[1]['parameters'][3], data[1]['parameters'][2]
-    # for i in range(3, 9):
-    #     data[i]['parameters'][0], data[i]['parameters'][1] = data[i]['parameters'][1], data[i]['parameters'][0]
+    to_label = visual.TextStim(window, text=u'To:', color=u'black', height=50, pos=(
+        -SCREEN_RES['width'] / 2.0 + VISUAL_OFFSET, SCREEN_RES['height'] / 1.96 - SCREEN_RES['height'] / 3.0))
+    is_like_label = visual.TextStim(window, text=u'Is Like:', color=u'black', height=50, pos=(
+        -SCREEN_RES['width'] / 2.0 + VISUAL_OFFSET, SCREEN_RES['height'] / 2.02 - 2 * SCREEN_RES['height'] / 3.0))
+    line = visual.Line(window, start=(-400, -550), end=(-400, 550), lineColor=u'black', lineWidth=10)
+    to_choose_one_label = visual.TextStim(window, text=u'To: (Choose one)', color=u'black', height=50,
+                                          wrapWidth=1500,
+                                          pos=(50, 2.7 * SCREEN_RES['height'] / 7.0))
+    time_left_label = visual.TextStim(window, text=u'16 seconds left.', height=50, color=u'black',
+                                      wrapWidth=1000,
+                                      pos=(-1.5 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0))
+    accept_box = visual.Rect(window, fillColor=u'dimgray', width=400, height=100,
+                             pos=(4.6 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0 - 40),
+                             lineColor=u'black')
+    accept_label = visual.TextStim(window, text=u'Accept answer', height=50, color=u'ghostwhite', wrapWidth=900,
+                                   pos=(
+                                       4.6 * SCREEN_RES['width'] / 13.0, -2.8 * SCREEN_RES['height'] / 7.0 - 40))
+    LABELS = [to_label, is_like_label, line, to_choose_one_label, time_left_label, accept_box, accept_label]
+    for block in data['list_of_blocks']:
+        # TODO: ADD break support
+        for trial in block['experiment_elements']:
+            print trial.keys()
+            if trial['type'] == 'instruction':
+                show_info(window, join('.', 'messages', trial['path']))
+                continue
+            [lab.setAutoDraw(True) for lab in LABELS]
+            A = StimulusCanvas(win=window, figs_desc=trial['matrix_info'][0]['parameters'], scale=SCALE,
+                               frame_color=u'black', pos=(
+                    -SCREEN_RES['width'] / 2.0 + VISUAL_OFFSET, SCREEN_RES['height'] / 2.0 - VISUAL_OFFSET))
+            B = StimulusCanvas(win=window, figs_desc=trial['matrix_info'][1]['parameters'], scale=SCALE,
+                               frame_color=u'black', pos=(-SCREEN_RES['width'] / 2.0 + VISUAL_OFFSET,
+                                                          SCREEN_RES['height'] / 2.05 - VISUAL_OFFSET - SCREEN_RES[
+                                                              'height'] / 3.0))
+            C = StimulusCanvas(win=window, figs_desc=trial['matrix_info'][2]['parameters'], scale=SCALE,
+                               frame_color=u'black', pos=(-SCREEN_RES['width'] / 2.0 + VISUAL_OFFSET,
+                                                          SCREEN_RES['height'] / 2.1 - VISUAL_OFFSET - 2 * SCREEN_RES[
+                                                              'height'] / 3.0))
+            figures = [A, B, C]
+            solutions = [
+                StimulusCanvas(window, trial['matrix_info'][i]['parameters'], scale=SCALE, frame_color=u'dimgray') for i
+                in range(3, 9)]
+            [solution.setPos((150, 0)) for solution in solutions]
 
-    print data[0]['parameters']
-    A = StimulusCanvas(win=window, figs_desc=data[0]['parameters'], scale=0.8, frame_color=u'black')
-    B = StimulusCanvas(win=window, figs_desc=data[1]['parameters'], scale=0.8, frame_color=u'black')
-    C = StimulusCanvas(win=window, figs_desc=data[2]['parameters'], scale=0.8, frame_color=u'black')
-    shift = 170
-    A.setPos((-SCREEN_RES['width'] / 2.0 + shift, SCREEN_RES['height'] / 2.0 - shift))
-    A.setAutoDraw(True)
-    B.setPos((-SCREEN_RES['width'] / 2.0 + shift, SCREEN_RES['height'] / 2.0 - shift - SCREEN_RES['height'] / 3.0))
-    B.setAutoDraw(True)
-    C.setPos((-SCREEN_RES['width'] / 2.0 + shift, SCREEN_RES['height'] / 2.0 - shift - 2 * SCREEN_RES['height'] / 3.0))
-    C.setAutoDraw(True)
-    ma_sie_do = visual.TextStim(window, text=u'To:', color=u'black', height=50,
-                                pos=(-SCREEN_RES['width'] / 2.0 + shift,
-                                     SCREEN_RES['height'] / 2.0 + 0.07 * shift - SCREEN_RES['height'] / 3.0))
-    ma_sie_do.setAutoDraw(True)
-    tak_jak = visual.TextStim(window, text=u'Is Like:', color=u'black', height=50,
-                              pos=(-SCREEN_RES['width'] / 2.0 + shift,
-                                   SCREEN_RES['height'] / 2.0 + 0.07 * shift - 2 * SCREEN_RES['height'] / 3.0))
-    tak_jak.setAutoDraw(True)
-    line = visual.Line(window, start=(-600, -550), end=(-600, 550), lineColor=u'black', lineWidth=10)
-    line.setAutoDraw(True)
-
-    solutions = [StimulusCanvas(window, data[i]['parameters'], scale=0.8, frame_color=u'dimgray') for i in range(3, 9)]
-    solutions[3].frame.setLineColor(u'green')
-    [solution.setPos((150, 0)) for solution in solutions]
-
-    shifts = [(-SCREEN_RES['width'] / 4.0, SCREEN_RES['height'] / 6.0), (0, SCREEN_RES['height'] / 6.0),
-              (SCREEN_RES['width'] / 4.0, SCREEN_RES['height'] / 6.0),
-              (-SCREEN_RES['width'] / 4.0, -SCREEN_RES['height'] / 6.0), (0, -SCREEN_RES['height'] / 6.0),
-              (SCREEN_RES['width'] / 4.0, -SCREEN_RES['height'] / 6.0)]
-    for solution, shift in zip(solutions, shifts):
-        solution.setPos(shift)
-    [solution.setAutoDraw(True) for solution in solutions]
-
-    ma_sie_do2 = visual.TextStim(window, text=u'To: (Choose one)', color=u'black', height=50, wrapWidth=1500,
-                                 pos=(50, 2.7 * SCREEN_RES['height'] / 7.0))
-    ma_sie_do2.setAutoDraw(True)
-    pozostalo_ci = visual.TextStim(window, text=u'16 seconds left.', height=50, color=u'black', wrapWidth=1000,
-                                   pos=(-1.5 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0))
-    pozostalo_ci.setAutoDraw(True)
-    zatwierdz_box = visual.Rect(window, fillColor=u'dimgray', width=600, height=100,
-                                pos=(4.5 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0 - 40),
-                                lineColor=u'black')
-    zatwierdz_box.setAutoDraw(True)
-    zatwierdz = visual.TextStim(window, text=u'Accept answer', height=50, color=u'ghostwhite', wrapWidth=900,
-                                pos=(4.5 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0 - 40))
-    zatwierdz.setAutoDraw(True)
-    window.flip()
-    core.wait(8)
+            shifts = [(-SCREEN_RES['width'] / 4.0, SCREEN_RES['height'] / 6.0), (0, SCREEN_RES['height'] / 6.0),
+                      (SCREEN_RES['width'] / 4.0, SCREEN_RES['height'] / 6.0),
+                      (-SCREEN_RES['width'] / 4.0, -SCREEN_RES['height'] / 6.0), (0, -SCREEN_RES['height'] / 6.0),
+                      (SCREEN_RES['width'] / 4.0, -SCREEN_RES['height'] / 6.0)]
+            for solution, shift in zip(solutions, shifts):
+                solution.setPos(shift)
+            figures.extend(solutions)
+            timer = core.CountdownTimer(trial['time'])
+            [fig.setAutoDraw(True) for fig in figures]
+            mouse = event.Mouse()
+            choosed_option = -1
+            while timer.getTime() > 0.0:
+                for idx, sol in enumerate(solutions, 3):
+                    if mouse.isPressedIn(sol._frame):
+                        sol.setFrameColor('green')
+                        choosed_option = idx
+                    if choosed_option != idx:
+                        if sol._frame.contains(mouse):
+                            sol.setFrameColor('yellow')
+                        else:
+                            sol.setFrameColor('gray')
+                time_left_label.setText(u'{} seconds left.'.format(int(timer.getTime())))
+                window.flip()
+                check_exit()
+            choosed_option = trial['matrix_info'][choosed_option]['name']
+            corr = choosed_option == 'D1'
+            [fig.setAutoDraw(False) for fig in figures]
+            [lab.setAutoDraw(False) for lab in LABELS]

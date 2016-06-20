@@ -1,7 +1,6 @@
 list_of_blocks:
 - experiment_elements:
-  - instruction_type: !!python/object/apply:classes.parameters.Instruction_type [
-      text]
+  - instruction_type: text
     path: instrukcja.txt
     time: 5
     type: instruction
@@ -241,7 +240,7 @@ list_of_blocks:
         frame: thin
         rotation: 90
     rel: 3
-    time: 1
+    time: 5
     tip: null
     tip_time: 4
     type: trial
