@@ -1,4 +1,6 @@
 from openpyxl import load_workbook
+import csv
+
 from classes.experiment import Experiment
 from classes.block import Block
 from classes.trial import Trial
@@ -6,6 +8,31 @@ from classes.parameters import Trial_type, Instruction_type, Per
 from classes.instruction import Instruction
 
 __author__ = 'ociepkam'
+
+
+def load_csv(filemane):
+    experiment = []
+    number_of_blocks = 0
+    with open(filemane, 'rb') as csvfile:
+        spamreader = csv.reader(csvfile)
+        head = []
+        for row_idx, row in enumerate(spamreader):
+            if row_idx == 0:
+                head = row
+            else:
+                trial = {}
+                for column_idx, column in enumerate(row):
+                    if column_idx == 13:
+                        break
+                    try:
+                        trial.update({str(head[column_idx]): int(column)})
+                    except:
+                        trial.update({str(head[column_idx]): str(column)})
+                if trial["BLOCK_NUMBER"] > number_of_blocks and trial["BLOCK_NUMBER"] is not "":
+                    number_of_blocks = trial["BLOCK_NUMBER"]
+                if trial['BLOCK_NUMBER'] is not "":
+                    experiment.append(trial)
+    return number_of_blocks, experiment
 
 
 def load_info(filename):
