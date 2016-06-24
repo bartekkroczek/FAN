@@ -240,7 +240,7 @@ list_of_blocks:
         frame: thin
         rotation: 90
     rel: 3
-    time: 5
+    time: 10
     tip: null
     tip_time: 4
     type: trial

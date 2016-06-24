@@ -115,6 +115,7 @@ class StimulusCanvas(object):
 if __name__ == '__main__':
     data = yaml.load(open(join('problem generator', 'sample problems', 'TestM41.yaml'), 'r'))
     SCREEN_RES = get_screen_res()
+    # TODO: confirmation button
     window = visual.Window(SCREEN_RES.values(), fullscr=True, monitor='TestMonitor',
                            units='pix', screen=0, color='Gainsboro')
 
@@ -139,7 +140,7 @@ if __name__ == '__main__':
     for block in data['list_of_blocks']:
         # TODO: ADD break support
         for trial in block['experiment_elements']:
-            print trial.keys()
+            # print trial.keys()
             if trial['type'] == 'instruction':
                 show_info(window, join('.', 'messages', trial['path']))
                 continue
@@ -172,8 +173,12 @@ if __name__ == '__main__':
             [fig.setAutoDraw(True) for fig in figures]
             mouse = event.Mouse()
             choosed_option = -1
-            while timer.getTime() > 0.0:
+            ans_accept = False
+            while timer.getTime() > 0.0 and not ans_accept:
                 for idx, sol in enumerate(solutions, 3):
+                    if mouse.isPressedIn(accept_box):
+                        ans_accept = True
+                        break
                     if mouse.isPressedIn(sol._frame):
                         sol.setFrameColor('green')
                         choosed_option = idx
@@ -185,7 +190,10 @@ if __name__ == '__main__':
                 time_left_label.setText(u'{} seconds left.'.format(int(timer.getTime())))
                 window.flip()
                 check_exit()
-            choosed_option = trial['matrix_info'][choosed_option]['name']
+            if choosed_option != -1:
+                choosed_option = trial['matrix_info'][choosed_option]['name']
+            print choosed_option
+            print ans_accept
             corr = choosed_option == 'D1'
             [fig.setAutoDraw(False) for fig in figures]
             [lab.setAutoDraw(False) for lab in LABELS]
