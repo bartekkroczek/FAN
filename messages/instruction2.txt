@@ -1,0 +1,11 @@
+Na przykład, jeśli na drugim rysunku jedna z figur z pierwszego rysunku obróciła się o 180 stopni oraz pojaśniała
+o jeden poziom szarości, a drugiej figurze pogrubiła się ramka o dwa poziomy grubości, to musisz wybrać taki
+rysunek-odpowiedz, na którym jedna z figur z trzeciego rysunku także obróciła się dokładnie o 180 i pojaśniała
+o jeden poziom szarości, a ramka drugiej figury pogrubiła się o dwa poziomy.
+
+Poprawne Twoim zdaniem rozwiązanie zaznaczaj klikając na nim myszka. Jeśli jesteś pewny/a, ze jest ono poprawne,
+klikaj na „Zatwierdź wybór”. Wtedy przechodzisz do kolejnej analogii. Na rozwiązanie każdej analogii masz 2 minuty.
+
+Teraz upewnij się, ze rozumiesz polecenie. Jeśli masz jakieś pytania, zadaj je teraz osobie prowadzącej badanie.
+
+Poczekaj na jej komendę, aby rozpocząć trening testu.

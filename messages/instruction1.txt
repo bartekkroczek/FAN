@@ -1,0 +1,15 @@
+To jest test wymagający dostrzeżenia analogii pomiędzy czterema rysunkami. Na każdym rysunku będą znajdować
+się 4 figury geometryczne. Test polega na tym, aby wykryć reguły, według których 2, 3 albo 4 figury na pierwszym
+rysunku zmieniają się w figury na drugim rysunku. Następnie, należy zastosować te reguły do pewnych figur
+znajdujących się na trzecim rysunku po to, aby wybrać spośród sześciu proponowanych rysunków-odpowiedzi ten
+jeden jedyny poprawny rysunek, na którym figury maja się tak do figur na rysunku trzecim, jak figury na rysunku
+drugim maja się do figur na rysunku pierwszym.
+Dla figur zmianie może ulec
+(1) wypełnienie (może być białe, jasnoszare lub ciemnoszare)
+(2) orientacja (obrót figury o 0, 90 lub 180 stopni) oraz/lub
+(3) grubość ramki (ramka cienka, średnia, gruba).
+
+Dla jednej figury 2 lub 3 jej cechy mogą się zmienić na raz (np. figura obraca się w lewo i pogrubia się jej ramka),
+ale często zmieni się tylko 1 cecha (np. tylko wypełnienie się rozjaśnia). Tylko taki rysunek, na
+którym WSZYSTKIE elementy wyglądu odpowiednich figur na rysunku trzecim i czwartym zmieniają się
+ANALOGICZNIE jak dla pierwszej pary rysunków, jest odpowiedzią POPRAWNA.

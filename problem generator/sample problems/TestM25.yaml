@@ -2,7 +2,7 @@ list_of_blocks:
 - experiment_elements:
   - instruction_type: !!python/object/apply:classes.parameters.Instruction_type [
       text]
-    path: instrukcja.txt
+    path: instruction1.txt
     time: 5
     type: instruction
   - exp: experiment

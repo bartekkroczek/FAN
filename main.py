@@ -3,19 +3,21 @@
 
 from os.path import join
 import yaml
-from psychopy import visual, core, logging, event
+from psychopy import visual, core, logging, event, gui
 import csv
 import codecs
 from misc.screen import get_screen_res
+import atexit
 
 STIMULI_PATH = join('.', 'stimuli', 'all')
 VISUAL_OFFSET = 120
-TEXT_SIZE = 50
+TEXT_SIZE = 30
 SCALE = 0.58
 TRIGGER_LIST = []
+RESULTS = [['choosed_option', 'ans_accept', 'rt', 'corr']]
 
 
-# @atexit.register
+@atexit.register
 def save_beh_results():
     with open(join('results', PART_ID + '_beh.csv'), 'w') as beh_file:
         beh_writer = csv.writer(beh_file)
@@ -113,9 +115,16 @@ class StimulusCanvas(object):
 
 
 if __name__ == '__main__':
+    info = {'Observer': 'Patrycja', 'Part_id': '', 'Part_age': '20', 'Part_sex': ['MALE', "FEMALE"],
+            'ExpDate': '06.2016'}
+    dictDlg = gui.DlgFromDict(dictionary=info, title='FAN', fixed=['ExpDate'])
+    if not dictDlg.OK:
+        exit(1)
+    PART_ID = info['Part_id'] + info['Part_sex'] + info['Part_age']
+    logging.LogFile('results/' + PART_ID + '.log', level=logging.INFO)
+
     data = yaml.load(open(join('problem generator', 'sample problems', 'TestM41.yaml'), 'r'))
     SCREEN_RES = get_screen_res()
-    # TODO: confirmation button
     window = visual.Window(SCREEN_RES.values(), fullscr=True, monitor='TestMonitor',
                            units='pix', screen=0, color='Gainsboro')
 
@@ -174,10 +183,12 @@ if __name__ == '__main__':
             mouse = event.Mouse()
             choosed_option = -1
             ans_accept = False
+            rt = -1
             while timer.getTime() > 0.0 and not ans_accept:
                 for idx, sol in enumerate(solutions, 3):
-                    if mouse.isPressedIn(accept_box):
+                    if mouse.isPressedIn(accept_box) and choosed_option != -1:
                         ans_accept = True
+                        rt = trial['time'] - timer.getTime()
                         break
                     if mouse.isPressedIn(sol._frame):
                         sol.setFrameColor('green')
@@ -192,8 +203,11 @@ if __name__ == '__main__':
                 check_exit()
             if choosed_option != -1:
                 choosed_option = trial['matrix_info'][choosed_option]['name']
-            print choosed_option
-            print ans_accept
             corr = choosed_option == 'D1'
+            RESULTS.append([choosed_option, ans_accept, rt, corr])
             [fig.setAutoDraw(False) for fig in figures]
             [lab.setAutoDraw(False) for lab in LABELS]
+    save_beh_results()
+    logging.flush()
+    show_info(window, join('.', 'messages', 'end.txt'))
+    window.close()

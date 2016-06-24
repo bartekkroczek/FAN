@@ -1,6 +1,6 @@
 list_of_blocks:
 - experiment_elements:
-  - {instruction_type: text, path: /home/lab/Procedury/analogia/instrukcja.txt, time: 5,
+  - {instruction_type: text, path: /home/lab/Procedury/analogia/instruction1.txt, time: 5,
     type: instruction}
   - exp: training
     feedb: 1
@@ -449,7 +449,7 @@ list_of_blocks:
     type: trial
     wait: 1
 - experiment_elements:
-  - {instruction_type: text, path: /home/lab/Procedury/analogia/instrukcja.txt, time: 5,
+  - {instruction_type: text, path: /home/lab/Procedury/analogia/instruction1.txt, time: 5,
     type: instruction}
   - exp: training
     feedb: 1
