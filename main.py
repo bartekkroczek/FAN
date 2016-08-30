@@ -8,11 +8,15 @@ import csv
 import codecs
 from misc.screen import get_screen_res
 import atexit
+import cgitb
+from dziala.concrete_experiment import concrete_experiment
+
+cgitb.enable(format='text')
 
 STIMULI_PATH = join('.', 'stimuli', 'all')
-VISUAL_OFFSET = 120
+VISUAL_OFFSET = 150
 TEXT_SIZE = 30
-SCALE = 0.58
+SCALE = 0.65
 TRIGGER_LIST = []
 RESULTS = [['choosed_option', 'ans_accept', 'rt', 'corr']]
 
@@ -65,7 +69,7 @@ def show_info(win, file_name, insert=''):
     :return:
     """
     msg = read_text_from_file(file_name, insert=insert)
-    msg = visual.TextStim(win, color='black', text=msg, height=TEXT_SIZE - 10, wrapWidth=SCREEN_RES['width'])
+    msg = visual.TextStim(win, color='black', text=msg, height=TEXT_SIZE - 5, wrapWidth=SCREEN_RES['width'])
     msg.draw()
     win.flip()
     key = event.waitKeys(keyList=['f7', 'return', 'space'])
@@ -87,7 +91,6 @@ class StimulusCanvas(object):
         shifts = [(-inner_shift, inner_shift), (inner_shift, inner_shift), (-inner_shift, -inner_shift),
                   (inner_shift, -inner_shift)]
         for fig_desc, inner_shift in zip(figs_desc, shifts):
-            fig_desc['figure'] += 1
             fig = "{figure}_{brightness}_{frame}_{rotation}.png".format(**fig_desc)
             fig = join(STIMULI_PATH, fig)
             fig = visual.ImageStim(win, fig, interpolate=True)
@@ -115,14 +118,16 @@ class StimulusCanvas(object):
 
 
 if __name__ == '__main__':
-    info = {'Part_id': '', 'Part_age': '20', 'Part_sex': ['MALE', "FEMALE"], 'ExpDate': '06.2016'}
+    info = {'Part_id': '', 'Part_age': '20', 'Part_sex': ['MALE', "FEMALE"],
+            'ExpDate': '06.2016'}
     dictDlg = gui.DlgFromDict(dictionary=info, title='FAN', fixed=['ExpDate'])
     if not dictDlg.OK:
         exit(1)
-    PART_ID = info['Part_id'] + info['Part_sex'] + info['Part_age']
-    logging.LogFile('results/' + PART_ID + '.log', level=logging.INFO)
+    PART_ID = str(info['Part_id'] + info['Part_sex'] + info['Part_age'])
+    logging.LogFile(join('results', PART_ID + '.log'), level=logging.INFO)
 
-    data = yaml.load(open(join('problem generator', 'sample problems', 'TestM41.yaml'), 'r'))
+    concrete_experiment(join('dziala', 'experiment.csv'), info['Part_id'], info['Part_sex'], info['Part_age'])
+    data = yaml.load(open(join('results', PART_ID + '.yaml'), 'r'))
     SCREEN_RES = get_screen_res()
     window = visual.Window(SCREEN_RES.values(), fullscr=True, monitor='TestMonitor',
                            units='pix', screen=0, color='Gainsboro')
@@ -131,19 +136,20 @@ if __name__ == '__main__':
         -SCREEN_RES['width'] / 2.0 + VISUAL_OFFSET, SCREEN_RES['height'] / 1.96 - SCREEN_RES['height'] / 3.0))
     is_like_label = visual.TextStim(window, text=u'Is Like:', color=u'black', height=50, pos=(
         -SCREEN_RES['width'] / 2.0 + VISUAL_OFFSET, SCREEN_RES['height'] / 2.02 - 2 * SCREEN_RES['height'] / 3.0))
-    line = visual.Line(window, start=(-400, -550), end=(-400, 550), lineColor=u'black', lineWidth=10)
+    line = visual.Line(window, start=(-SCREEN_RES['width'] / 3.8, -550), end=(-SCREEN_RES['width'] / 3.8, 550),
+                       lineColor=u'black', lineWidth=10)
     to_choose_one_label = visual.TextStim(window, text=u'To: (Choose one)', color=u'black', height=50,
                                           wrapWidth=1500,
                                           pos=(50, 2.7 * SCREEN_RES['height'] / 7.0))
     time_left_label = visual.TextStim(window, text=u'16 seconds left.', height=50, color=u'black',
                                       wrapWidth=1000,
                                       pos=(-1.5 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0))
-    accept_box = visual.Rect(window, fillColor=u'dimgray', width=400, height=100,
+    accept_box = visual.Rect(window, fillColor=u'dimgray', width=600, height=100,
                              pos=(4.6 * SCREEN_RES['width'] / 13.0, -3 * SCREEN_RES['height'] / 7.0 - 40),
                              lineColor=u'black')
     accept_label = visual.TextStim(window, text=u'Accept answer', height=50, color=u'ghostwhite', wrapWidth=900,
                                    pos=(
-                                       4.6 * SCREEN_RES['width'] / 13.0, -2.8 * SCREEN_RES['height'] / 7.0 - 40))
+                                       4.6 * SCREEN_RES['width'] / 13.0, -2.8 * SCREEN_RES['height'] / 7.0 - 60))
     LABELS = [to_label, is_like_label, line, to_choose_one_label, time_left_label, accept_box, accept_label]
     for block in data['list_of_blocks']:
         # TODO: ADD break support
