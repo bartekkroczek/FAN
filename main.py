@@ -115,8 +115,7 @@ class StimulusCanvas(object):
 
 
 if __name__ == '__main__':
-    info = {'Observer': 'Patrycja', 'Part_id': '', 'Part_age': '20', 'Part_sex': ['MALE', "FEMALE"],
-            'ExpDate': '06.2016'}
+    info = {'Part_id': '', 'Part_age': '20', 'Part_sex': ['MALE', "FEMALE"], 'ExpDate': '06.2016'}
     dictDlg = gui.DlgFromDict(dictionary=info, title='FAN', fixed=['ExpDate'])
     if not dictDlg.OK:
         exit(1)
