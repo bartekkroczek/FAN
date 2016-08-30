@@ -8,10 +8,8 @@ import csv
 import codecs
 from misc.screen import get_screen_res
 import atexit
-import cgitb
 from dziala.concrete_experiment import concrete_experiment
 
-cgitb.enable(format='text')
 
 STIMULI_PATH = join('.', 'stimuli', 'all')
 VISUAL_OFFSET = 150
