@@ -16,9 +16,15 @@ VISUAL_OFFSET = 150
 TEXT_SIZE = 30
 SCALE = 0.65
 TRIGGER_LIST = []
-RESULTS = [['choosed_option', 'ans_accept', 'rt', 'corr']]
+RESULTS = [['choosed_option', 'ans_accept', 'rt', 'corr', 'time', 'rel', 'feedb', 'wait', 'exp', 'type']]
 
+# TIME, REL, FEEDB, WAIT, EXP, POS  (pozycja z sześciu, na której była prezentowana opcja D),
+#  LATENCY (czas odpowiedzi – naciśnięcia „zatwierdź
+# odpowiedź”), OPT1 (0 albo 1 gdy wybrano opcję 1), OPT2 (0 albo 1 gdy wybrano opcję 2), OPT3 (0 albo 1 gdy wybrano
+# opcję 3), OPT4 (0 lub 1 albo wybrano opcję 4), OPT5 (0 albo 1 gdy wybrano opcję 5), OPT6 (0 albo 1 gdy wybrano opcję
+# 6), NORESP (0 albo 1 gdy nie wybrano żadnej opcji), TOTAL (liczba cech zmienionych w opcji D), SIMILARITY (0..1).
 
+# 'time', 'rel', 'feedb', 'wait', 'exp', 'type'
 @atexit.register
 def save_beh_results():
     with open(join('results', PART_ID + '_beh.csv'), 'w') as beh_file:
@@ -152,7 +158,6 @@ if __name__ == '__main__':
     for block in data['list_of_blocks']:
         # TODO: ADD break support
         for trial in block['experiment_elements']:
-            # print trial.keys()
             if trial['type'] == 'instruction':
                 show_info(window, join('.', 'messages', trial['path']))
                 continue
@@ -207,7 +212,8 @@ if __name__ == '__main__':
             if choosed_option != -1:
                 choosed_option = trial['matrix_info'][choosed_option]['name']
             corr = choosed_option == 'D1'
-            RESULTS.append([choosed_option, ans_accept, rt, corr])
+            RESULTS.append([choosed_option, ans_accept, rt, corr, trial['time'], trial['rel'], trial['feedb'],
+                            trial['wait'], trial['exp'], trial['type']])
             [fig.setAutoDraw(False) for fig in figures]
             [lab.setAutoDraw(False) for lab in LABELS]
     save_beh_results()
