@@ -8,8 +8,7 @@ import csv
 import codecs
 from misc.screen import get_screen_res
 import atexit
-from dziala.concrete_experiment import concrete_experiment
-
+from problemGenerator.concrete_experiment import concrete_experiment
 
 STIMULI_PATH = join('.', 'stimuli', 'all')
 VISUAL_OFFSET = 150
@@ -18,22 +17,16 @@ SCALE = 0.65
 TRIGGER_LIST = []
 RESULTS = [['choosed_option', 'ans_accept', 'rt', 'corr', 'time', 'rel', 'feedb', 'wait', 'exp', 'type']]
 
-# TIME, REL, FEEDB, WAIT, EXP, POS  (pozycja z sześciu, na której była prezentowana opcja D),
-#  LATENCY (czas odpowiedzi – naciśnięcia „zatwierdź
-# odpowiedź”), OPT1 (0 albo 1 gdy wybrano opcję 1), OPT2 (0 albo 1 gdy wybrano opcję 2), OPT3 (0 albo 1 gdy wybrano
-# opcję 3), OPT4 (0 lub 1 albo wybrano opcję 4), OPT5 (0 albo 1 gdy wybrano opcję 5), OPT6 (0 albo 1 gdy wybrano opcję
-# 6), NORESP (0 albo 1 gdy nie wybrano żadnej opcji), TOTAL (liczba cech zmienionych w opcji D), SIMILARITY (0..1).
 
-# 'time', 'rel', 'feedb', 'wait', 'exp', 'type'
 @atexit.register
 def save_beh_results():
     with open(join('results', PART_ID + '_beh.csv'), 'w') as beh_file:
         beh_writer = csv.writer(beh_file)
         beh_writer.writerows(RESULTS)
     logging.flush()
-    with open(join('results', PART_ID + '_triggermap.txt'), 'w') as trigger_file:
-        trigger_writer = csv.writer(trigger_file)
-        trigger_writer.writerows(TRIGGER_LIST)
+    # with open(join('results', PART_ID + '_triggermap.txt'), 'w') as trigger_file:
+    #     trigger_writer = csv.writer(trigger_file)
+    #     trigger_writer.writerows(TRIGGER_LIST)
 
 
 def read_text_from_file(file_name, insert=''):
@@ -69,6 +62,8 @@ def check_exit(key='f7'):
 def show_info(win, file_name, insert=''):
     """
     Clear way to show info message into screen.
+    :type insert: text
+    :param file_name: 
     :param win:
     :return:
     """
@@ -90,8 +85,8 @@ def abort_with_error(err):
 class StimulusCanvas(object):
     def __init__(self, win, figs_desc, scale=1.0, frame_color=u'crimson', pos=None):
         self._figures = list()
-        self._frame = visual.Rect(win, width=375 * scale, height=375 * scale, lineColor=frame_color, lineWidth=5)
-        inner_shift = 90 * scale
+        self._frame = visual.Rect(win, width=390 * scale, height=390 * scale, lineColor=frame_color, lineWidth=5)
+        inner_shift = 95 * scale
         shifts = [(-inner_shift, inner_shift), (inner_shift, inner_shift), (-inner_shift, -inner_shift),
                   (inner_shift, -inner_shift)]
         for fig_desc, inner_shift in zip(figs_desc, shifts):
@@ -130,7 +125,7 @@ if __name__ == '__main__':
     PART_ID = str(info['Part_id'] + info['Part_sex'] + info['Part_age'])
     logging.LogFile(join('results', PART_ID + '.log'), level=logging.INFO)
 
-    concrete_experiment(join('dziala', 'experiment.csv'), info['Part_id'], info['Part_sex'], info['Part_age'])
+    concrete_experiment(join('problemGenerator', 'experiment.csv'), info['Part_id'], info['Part_sex'], info['Part_age'])
     data = yaml.load(open(join('results', PART_ID + '.yaml'), 'r'))
     SCREEN_RES = get_screen_res()
     window = visual.Window(SCREEN_RES.values(), fullscr=True, monitor='TestMonitor',
@@ -219,4 +214,4 @@ if __name__ == '__main__':
     save_beh_results()
     logging.flush()
     show_info(window, join('.', 'messages', 'end.txt'))
-    window.close()
+window.close()
