@@ -1,1 +1,1 @@
-Koniec treningu, naciśnij spację by przejść do eksperymentu.
+﻿Now the training is over. Press space to start the main test.

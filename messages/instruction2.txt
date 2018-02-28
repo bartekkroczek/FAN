@@ -1,11 +1,1 @@
-Na przykład, jeśli na drugim rysunku jedna z figur z pierwszego rysunku obróciła się o 180 stopni oraz pojaśniała
-o jeden poziom szarości, a drugiej figurze pogrubiła się ramka o dwa poziomy grubości, to musisz wybrać taki
-rysunek-odpowiedz, na którym jedna z figur z trzeciego rysunku także obróciła się dokładnie o 180 i pojaśniała
-o jeden poziom szarości, a ramka drugiej figury pogrubiła się o dwa poziomy.
-
-Poprawne Twoim zdaniem rozwiązanie zaznaczaj klikając na nim myszka. Jeśli jesteś pewny/a, ze jest ono poprawne,
-klikaj na „Zatwierdź wybór”. Wtedy przechodzisz do kolejnej analogii. Na rozwiązanie każdej analogii masz 2 minuty.
-
-Teraz upewnij się, ze rozumiesz polecenie. Jeśli masz jakieś pytania, zadaj je teraz osobie prowadzącej badanie.
-
-Poczekaj na jej komendę, aby rozpocząć trening testu.
+﻿See the example: When in the second pattern one of the figures from the first pattern rotated by 180 degrees and its filling became lighter, and another figure's border got thicker, you have to choose the response option in which one figure, relative to the third pattern, rotated and changed its filling, and for another figure its border changed thickness. Choose the correct option by clicking on it with the mouse. If you are certain that you chose the correct option, please click "accept" button in order to accept your choice and move to another test item. For sollving each analogy you have [please set] seconds. Now please make sure that you understand this instruction. If you have any questions, please ask the research assistant. Wait for command to start two training items of the test.
