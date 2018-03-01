@@ -1,1 +1,14 @@
-﻿This is a test that requires finding an analogy between two pairs of geometric patterns. Each pattern contains four geometric figures. During the test, you will need to discover rules according to which three or four figures from the first pattern become modified in the second pattern. Next, you will need to apply exactly the same rules to some figures present in the third pattern, in order to be able to choose, out of six proposed options, the one and only correct pattern, in which the figures were trasformed according to these rules. That is, figures in such a correct pattern should be transformed according to the same way, in relation to the third pattern, as the figures in the second pattern were transformed relative to the first pattern. Three features of a figure can be transformed: (1) the filling can change (can be white, light grey, or dark grey), (2) orientation can change (rotation by 0, 90, or 180 angular degrees), or (3) the border thickness can alter (thin, medium, think). For one figure, either two or three its features can change (for example, the figure gets rotated to the left and its filling becomes darker). Only such a pattern in which ALL the features change between the third and the fourth (to be found) pattern in the ANALOGOUS way as change the features between the first and the seconds pattern is the correct answer.
+﻿This is a test that requires finding an analogy between two pairs of geometric patterns. Each pattern 
+ contains four geometric figures. During the test, you will need to discover rules according to which 
+ three or four figures from the first pattern become modified in the second pattern. Next, you will 
+ need to apply exactly the same rules to some figures present in the third pattern, in order to be able 
+ to choose, out of six proposed options, the one and only correct pattern, in which the figures were 
+ trasformed according to these rules. That is, figures in such a correct pattern should be transformed 
+ according to the same way, in relation to the third pattern, as the figures in the second pattern were 
+ transformed relative to the first pattern. Three features of a figure can be transformed: (1) the filling 
+ can change (can be white, light grey, or dark grey), (2) orientation can change (rotation by 0, 90, or 180 
+ angular degrees), or (3) the border thickness can alter (thin, medium, think). For one figure, either two 
+ or three its features can change (for example, the figure gets rotated to the left and its filling becomes 
+ darker). Only such a pattern in which ALL the features change between the third and the fourth (to be found) 
+ pattern in the ANALOGOUS way as change the features between the first and the seconds pattern is the correct 
+ answer.
