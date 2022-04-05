@@ -14431,3 +14431,978 @@
 39.5692 	EXP 	Set  text=67 seconds left.
 39.5694 	DATA 	Keypress: f7
 39.5694 	CRITICAL 	Experiment finished by user! f7 pressed.
+7.7247 	INFO 	Screen res set as: 1920x1080
+6.6244 	INFO 	Screen res set as: 1920x1080
+6.8898 	INFO 	Screen res set as: 1920x1080
+7.0479 	INFO 	Screen res set as: 1920x1080
+7.6486 	INFO 	Screen res set as: 1920x1080
+6.7283 	INFO 	Screen res set as: 1920x1080
+6.2448 	INFO 	Screen res set as: 1920x1080
+6.8136 	INFO 	Screen res set as: 1920x1080
+6.3255 	INFO 	Screen res set as: 1920x1080
+6.3309 	INFO 	Loaded monitor calibration from ['2022_04_05 19:13']
+8.9386 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0.7254902, 0.7254902, 0.7254902]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000268407C4E80>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000026840994048>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='pix', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.9387 	EXP 	window1: mouseVisible = True
+9.0295 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-810.        ,  191.02040816]), rgb=UNKNOWN, text='To:', units='pix', win=Window(...), wrapWidth=500)
+9.0441 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-810.        , -185.34653465]), rgb=UNKNOWN, text='Is Like:', units='pix', win=Window(...), wrapWidth=500)
+9.0483 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=10, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='pix', vertices=ndarray(...), win=Window(...), windingRule=None)
+9.0605 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 50.        , 416.57142857]), rgb=UNKNOWN, text='To: (Choose one)', units='pix', win=Window(...), wrapWidth=1500)
+9.0751 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-221.53846154, -462.85714286]), rgb=UNKNOWN, text='16 seconds left.', units='pix', win=Window(...), wrapWidth=1000)
+9.0778 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([-0.17647059, -0.17647059, -0.17647059]), fillColorSpace='rgb', fillRGB=array([-0.17647059, -0.17647059, -0.17647059]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([ 679.38461538, -502.85714286]), size=array([600., 100.]), units='pix', vertices=ndarray(...), win=Window(...))
+9.0900 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.94509804, 0.94509804, 1.        ]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 679.38461538, -492.        ]), rgb=UNKNOWN, text='Accept answer', units='pix', win=Window(...), wrapWidth=900)
+9.2007 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=25, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+11.3565 	DATA 	Keypress: space
+11.4017 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=25, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+11.8256 	DATA 	Keypress: space
+11.8290 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+11.9497 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\3_gray_wide_90.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+11.9556 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\15_white_wide_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+11.9659 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\1_slate_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+11.9747 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\13_slate_narrow_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+11.9775 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+11.9875 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\15_white_wide_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+11.9964 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\1_gray_wide_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0055 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\13_white_narrow_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0148 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\3_gray_thin_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0175 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+12.0267 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\12_white_wide_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0355 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\14_slate_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0435 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\17_white_wide_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0521 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\20_slate_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0549 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+12.0642 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\20_slate_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0726 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\17_white_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0811 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\14_slate_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0898 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\12_white_wide_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.0920 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+12.1011 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\20_gray_wide_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1093 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\17_white_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1226 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\14_white_thin_90.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1310 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\12_white_wide_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1332 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+12.1426 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\20_gray_wide_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1512 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\17_white_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1593 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\14_white_narrow_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1679 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\12_white_wide_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1701 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+12.1783 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\20_gray_wide_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1867 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\17_gray_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.1960 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\14_white_thin_90.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2041 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\12_white_wide_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2068 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+12.2163 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\20_gray_wide_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2247 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\17_white_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2326 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\14_white_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2408 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\12_white_wide_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2432 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+12.2520 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\20_gray_wide_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2607 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\17_white_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2706 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\14_white_thin_90.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2798 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\12_white_wide_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+12.2874 	INFO 	Mouse: using default window
+12.2875 	EXP 	window1: mouseVisible = True
+12.3544 	EXP 	unnamed TextStim: autoDraw = True
+12.3544 	EXP 	unnamed TextStim: autoDraw = True
+12.3544 	EXP 	unnamed Line: autoDraw = True
+12.3544 	EXP 	unnamed TextStim: autoDraw = True
+12.3544 	EXP 	unnamed TextStim: autoDraw = True
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed TextStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([-810.,  390.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-871.75,  451.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-748.25,  451.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-871.75,  328.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-748.25,  328.25])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([-810.        ,   16.82926829])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-871.75      ,   78.57926829])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-748.25      ,   78.57926829])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-871.75      ,  -44.92073171])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-748.25      ,  -44.92073171])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([-810.        , -355.71428571])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-871.75      , -293.96428571])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-748.25      , -293.96428571])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-871.75      , -417.46428571])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-748.25      , -417.46428571])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+12.3544 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([150.,   0.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([150.,   0.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([150.,   0.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([150.,   0.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([150.,   0.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([150.,   0.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+12.3544 	EXP 	unnamed Rect: pos = array([-330.,  180.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-391.75,  241.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-268.25,  241.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-391.75,  118.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-268.25,  118.25])
+12.3544 	EXP 	unnamed Rect: pos = array([150., 180.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 88.25, 241.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75, 241.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 88.25, 118.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([211.75, 118.25])
+12.3544 	EXP 	unnamed Rect: pos = array([630., 180.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([568.25, 241.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([691.75, 241.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([568.25, 118.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([691.75, 118.25])
+12.3544 	EXP 	unnamed Rect: pos = array([-330., -180.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-391.75, -118.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-268.25, -118.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-391.75, -241.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([-268.25, -241.75])
+12.3544 	EXP 	unnamed Rect: pos = array([ 150., -180.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([  88.25, -118.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 211.75, -118.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([  88.25, -241.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 211.75, -241.75])
+12.3544 	EXP 	unnamed Rect: pos = array([ 630., -180.])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 568.25, -118.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 691.75, -118.25])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 568.25, -241.75])
+12.3544 	EXP 	unnamed ImageStim: pos = array([ 691.75, -241.75])
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed Rect: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed ImageStim: autoDraw = True
+12.3544 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.3768 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.3933 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.4092 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.4255 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.4414 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.4580 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.4748 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.4913 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.5080 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.5247 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.5414 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.5580 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.5747 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.5914 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.6081 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.6258 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.6415 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.6581 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.6757 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.6917 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.7082 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.7249 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.7415 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.7583 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.7750 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.7916 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.8091 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.8250 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.8417 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.8583 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.8762 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.8918 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.9084 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.9251 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.9419 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.9585 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.9751 	EXP 	unnamed TextStim: text = '89 seconds left.'
+12.9919 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.0086 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.0252 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.0419 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.0586 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.0753 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.0919 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.1087 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.1273 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.1441 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.1604 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.1776 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.1943 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.2108 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.2282 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.2445 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.2612 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.2778 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.2942 	EXP 	unnamed TextStim: text = '89 seconds left.'
+13.3141 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.3306 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.3473 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.3635 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.3815 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.3980 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.4149 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.4316 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.4485 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.4653 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.4820 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.4987 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.5151 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.5320 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.5490 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.5660 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.5825 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.5996 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.6160 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.6336 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.6509 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.6683 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.6848 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.7013 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.7182 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.7346 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.7512 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.7674 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.7842 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.8008 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.8175 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.8341 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.8512 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.8682 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.8863 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.9031 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.9198 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.9360 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.9527 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.9693 	EXP 	unnamed TextStim: text = '88 seconds left.'
+13.9858 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.0023 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.0188 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.0352 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.0517 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.0679 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.0844 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.1014 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.1186 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.1367 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.1525 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.1684 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.1844 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.2000 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.2160 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.2328 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.2486 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.2642 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.2800 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.2959 	EXP 	unnamed TextStim: text = '88 seconds left.'
+14.3166 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.3327 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.3489 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.3643 	DATA 	Mouse: Left button down, pos=(680,395)
+14.3653 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.3839 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.4007 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.4175 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.4340 	DATA 	Mouse:  Left button up, pos=(680,395)
+14.4350 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.4511 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.4666 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.4827 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.4989 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.5151 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.5305 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.5464 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.5619 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.5776 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.5937 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.6103 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.6270 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.6437 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.6603 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.6771 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.6937 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.7104 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.7271 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.7439 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.7604 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.7771 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.7938 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.8105 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.8272 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.8439 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.8606 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.8773 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.8940 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.9107 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.9273 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.9440 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.9608 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.9773 	EXP 	unnamed TextStim: text = '87 seconds left.'
+14.9942 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.0108 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.0275 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.0442 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.0608 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.0785 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.0963 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.1125 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.1289 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.1479 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.1645 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.1808 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.1978 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.2143 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.2303 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.2470 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.2636 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.2802 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.2969 	EXP 	unnamed TextStim: text = '87 seconds left.'
+15.3173 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.3334 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.3498 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.3661 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.3828 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.3998 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.4510 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.4675 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.4842 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.5016 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.5176 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.5333 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.5490 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.5646 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.5805 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.5970 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.6126 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.6282 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.6455 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.6615 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.6782 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.6948 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.7115 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.7267 	DATA 	Mouse: Left button down, pos=(1495,37)
+15.7282 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.7474 	EXP 	unnamed TextStim: text = '86 seconds left.'
+15.7499 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+15.7568 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\3_white_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.7624 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\6_slate_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.7675 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\12_slate_wide_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.7728 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\7_white_narrow_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.7757 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+15.7810 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\12_white_thin_90.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.7873 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\3_white_narrow_90.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.7934 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\7_slate_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.7993 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\6_gray_thin_90.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8019 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+15.8081 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\10_gray_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8139 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\11_slate_wide_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8188 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\1_white_wide_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8247 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\8_white_thin_90.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8277 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+15.8330 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\10_white_thin_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8383 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\11_white_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8432 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\1_slate_narrow_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8486 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\8_white_narrow_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8512 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+15.8563 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\10_gray_thin_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8615 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\11_white_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8668 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\1_slate_narrow_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8719 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\8_white_narrow_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8740 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+15.8804 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\10_white_thin_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8858 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\11_white_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8925 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\1_white_narrow_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.8980 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\8_white_narrow_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9000 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+15.9051 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\10_gray_thin_180.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9102 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\11_white_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9156 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\1_white_wide_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9214 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\8_white_thin_90.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9234 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+15.9291 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\10_white_thin_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9344 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\11_white_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9395 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\1_slate_narrow_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9446 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\8_white_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9477 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-0.17647059, -0.17647059, -0.17647059]), lineColorSpace='rgb', lineRGB=array([-0.17647059, -0.17647059, -0.17647059]), lineWidth=5, name='unnamed Rect', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([253.5, 253.5]), units='pix', vertices=ndarray(...), win=Window(...))
+15.9532 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\10_white_thin_270.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9592 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\11_white_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9649 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\1_slate_narrow_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9739 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image='.\\stimuli\\all\\8_gray_thin_0.png', interpolate=True, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([188, 188]), texRes=128, units='pix', win=Window(...))
+15.9824 	INFO 	Mouse: using default window
+15.9825 	EXP 	window1: mouseVisible = True
+15.9828 	DATA 	Mouse:  Left button up, pos=(1495,37)
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed ImageStim: autoDraw = False
+16.0203 	EXP 	unnamed TextStim: autoDraw = False
+16.0203 	EXP 	unnamed TextStim: autoDraw = False
+16.0203 	EXP 	unnamed Line: autoDraw = False
+16.0203 	EXP 	unnamed TextStim: autoDraw = False
+16.0203 	EXP 	unnamed TextStim: autoDraw = False
+16.0203 	EXP 	unnamed Rect: autoDraw = False
+16.0203 	EXP 	unnamed TextStim: autoDraw = False
+16.0203 	EXP 	unnamed TextStim: autoDraw = True
+16.0203 	EXP 	unnamed TextStim: autoDraw = True
+16.0203 	EXP 	unnamed Line: autoDraw = True
+16.0203 	EXP 	unnamed TextStim: autoDraw = True
+16.0203 	EXP 	unnamed TextStim: autoDraw = True
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed TextStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([-810.,  390.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-871.75,  451.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-748.25,  451.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-871.75,  328.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-748.25,  328.25])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([-810.        ,   16.82926829])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-871.75      ,   78.57926829])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-748.25      ,   78.57926829])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-871.75      ,  -44.92073171])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-748.25      ,  -44.92073171])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([-810.        , -355.71428571])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-871.75      , -293.96428571])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-748.25      , -293.96428571])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-871.75      , -417.46428571])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-748.25      , -417.46428571])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([61.75, 61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([-61.75, -61.75])
+16.0203 	EXP 	unnamed ImageStim: size = (122.2, 122.2)
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 61.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([150.,   0.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([150.,   0.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([150.,   0.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([150.,   0.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([150.,   0.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([150.,   0.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([88.25, 61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75,  61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 88.25, -61.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75, -61.75])
+16.0203 	EXP 	unnamed Rect: pos = array([-330.,  180.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-391.75,  241.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-268.25,  241.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-391.75,  118.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-268.25,  118.25])
+16.0203 	EXP 	unnamed Rect: pos = array([150., 180.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 88.25, 241.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75, 241.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 88.25, 118.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([211.75, 118.25])
+16.0203 	EXP 	unnamed Rect: pos = array([630., 180.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([568.25, 241.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([691.75, 241.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([568.25, 118.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([691.75, 118.25])
+16.0203 	EXP 	unnamed Rect: pos = array([-330., -180.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-391.75, -118.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-268.25, -118.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-391.75, -241.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([-268.25, -241.75])
+16.0203 	EXP 	unnamed Rect: pos = array([ 150., -180.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([  88.25, -118.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 211.75, -118.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([  88.25, -241.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 211.75, -241.75])
+16.0203 	EXP 	unnamed Rect: pos = array([ 630., -180.])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 568.25, -118.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 691.75, -118.25])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 568.25, -241.75])
+16.0203 	EXP 	unnamed ImageStim: pos = array([ 691.75, -241.75])
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed Rect: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed ImageStim: autoDraw = True
+16.0203 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.0412 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.0571 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.0741 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.0911 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.1072 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.1230 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.1406 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.1566 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.1726 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.1886 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.2048 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.2205 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.2364 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.2522 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.2679 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.2837 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.2998 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.3160 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.3320 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.3489 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.3651 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.3812 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.3994 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.4163 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.4329 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.4494 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.4666 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.4839 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.5007 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.5180 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.5351 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.5520 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.5685 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.5855 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.6020 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.6184 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.6348 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.6540 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.6710 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.6877 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.7044 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.7207 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.7369 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.7526 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.7687 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.7845 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.8002 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.8160 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.8319 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.8479 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.8639 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.8801 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.8981 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.9134 	DATA 	Mouse: Left button down, pos=(1543,292)
+16.9145 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.9316 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.9473 	DATA 	Mouse:  Left button up, pos=(1543,292)
+16.9485 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.9649 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.9807 	EXP 	unnamed TextStim: text = '89 seconds left.'
+16.9995 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.0151 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.0306 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.0463 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.0630 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.0797 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.0963 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.1131 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.1297 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.1464 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.1631 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.1798 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.1965 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.2132 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.2299 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.2466 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.2635 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.2800 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.2967 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.3133 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.3300 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.3467 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.3634 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.3801 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.3970 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.4138 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.4304 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.4468 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.4635 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.4802 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.4969 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.5135 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.5302 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.5470 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.5636 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.5803 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.5972 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.6136 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.6304 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.6471 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.6652 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.6816 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.6974 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.7138 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.7304 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.7472 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.7638 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.7805 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.7972 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.8139 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.8306 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.8472 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.8477 	DATA 	Mouse: Left button down, pos=(1563,49)
+17.8639 	EXP 	unnamed TextStim: text = '88 seconds left.'
+17.8785 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=25, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed ImageStim: autoDraw = False
+17.8806 	EXP 	unnamed TextStim: autoDraw = False
+17.8806 	EXP 	unnamed TextStim: autoDraw = False
+17.8806 	EXP 	unnamed Line: autoDraw = False
+17.8806 	EXP 	unnamed TextStim: autoDraw = False
+17.8806 	EXP 	unnamed TextStim: autoDraw = False
+17.8806 	EXP 	unnamed Rect: autoDraw = False
+17.8806 	EXP 	unnamed TextStim: autoDraw = False
+17.8894 	DATA 	Mouse:  Left button up, pos=(1563,49)
+20.1784 	DATA 	Keypress: f7
+20.1785 	CRITICAL 	Experiment finished by user on info screen! F7 pressed.
+21.3688 	EXP 	window1: mouseVisible = True
+6.6998 	INFO 	Screen res set as: 1920x1080
+6.7005 	INFO 	Loaded monitor calibration from ['2022_04_05 19:13']
+9.0694 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0.7254902, 0.7254902, 0.7254902]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000015510084DA0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000155038A6940>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='pix', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.0696 	EXP 	window1: mouseVisible = True
+9.1265 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-810.        ,  191.02040816]), rgb=UNKNOWN, text='To:', units='pix', win=Window(...), wrapWidth=500)
+9.1365 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-810.        , -185.34653465]), rgb=UNKNOWN, text='Is Like:', units='pix', win=Window(...), wrapWidth=500)
+9.1399 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=10, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='pix', vertices=ndarray(...), win=Window(...), windingRule=None)
+9.1506 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 50.        , 416.57142857]), rgb=UNKNOWN, text='To: (Choose one)', units='pix', win=Window(...), wrapWidth=1500)
+9.1610 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-221.53846154, -462.85714286]), rgb=UNKNOWN, text='16 seconds left.', units='pix', win=Window(...), wrapWidth=1000)
+9.1630 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([-0.17647059, -0.17647059, -0.17647059]), fillColorSpace='rgb', fillRGB=array([-0.17647059, -0.17647059, -0.17647059]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([ 679.38461538, -502.85714286]), size=array([600., 100.]), units='pix', vertices=ndarray(...), win=Window(...))
+9.1722 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.94509804, 0.94509804, 1.        ]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 679.38461538, -492.        ]), rgb=UNKNOWN, text='Accept answer', units='pix', win=Window(...), wrapWidth=900)
+9.2561 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=25, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+10.6021 	DATA 	Keypress: f7
+10.6022 	CRITICAL 	Experiment finished by user on info screen! F7 pressed.
+11.7692 	EXP 	window1: mouseVisible = True
+6.5434 	INFO 	Screen res set as: 1920x1080
+6.5437 	WARNING 	Monitor specification not found. Creating a temporary one...
+8.9357 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0.7254902, 0.7254902, 0.7254902]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F268581E10>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F25BDC68D0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='pix', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.9358 	EXP 	window1: mouseVisible = True
+8.9928 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-810.        ,  191.02040816]), rgb=UNKNOWN, text='To:', units='pix', win=Window(...), wrapWidth=500)
+9.0033 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-810.        , -185.34653465]), rgb=UNKNOWN, text='Is Like:', units='pix', win=Window(...), wrapWidth=500)
+9.0068 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=10, name='unnamed Line', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='pix', vertices=ndarray(...), win=Window(...), windingRule=None)
+9.0169 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 50.        , 416.57142857]), rgb=UNKNOWN, text='To: (Choose one)', units='pix', win=Window(...), wrapWidth=1500)
+9.0272 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-221.53846154, -462.85714286]), rgb=UNKNOWN, text='16 seconds left.', units='pix', win=Window(...), wrapWidth=1000)
+9.0292 	EXP 	Created unnamed Rect = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([-0.17647059, -0.17647059, -0.17647059]), fillColorSpace='rgb', fillRGB=array([-0.17647059, -0.17647059, -0.17647059]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=1.5, name='unnamed Rect', opacity=1, ori=0.0, pos=array([ 679.38461538, -502.85714286]), size=array([600., 100.]), units='pix', vertices=ndarray(...), win=Window(...))
+9.0383 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0.94509804, 0.94509804, 1.        ]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=50, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 679.38461538, -492.        ]), rgb=UNKNOWN, text='Accept answer', units='pix', win=Window(...), wrapWidth=900)
+9.1212 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=25, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1920)
+10.7403 	DATA 	Keypress: f7
+10.7404 	CRITICAL 	Experiment finished by user on info screen! F7 pressed.
+11.9294 	EXP 	window1: mouseVisible = True

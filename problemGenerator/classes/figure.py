@@ -1,7 +1,7 @@
 import copy
 import random
 
-from parameters import ROTATION, BRIGHTNESS, FRAME, PARAMETERS
+from .parameters import ROTATION, BRIGHTNESS, FRAME, PARAMETERS
 
 
 class Figure:

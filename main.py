@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from os.path import join
-import yaml
+from yaml import load, Loader
 from psychopy import visual, core, logging, event, gui
 import csv
 import codecs
@@ -126,10 +126,9 @@ if __name__ == '__main__':
     logging.LogFile(join('results', PART_ID + '.log'), level=logging.INFO)
 
     concrete_experiment(join('problemGenerator', 'experiment.csv'), info['Part_id'], info['Part_sex'], info['Part_age'])
-    data = yaml.load(open(join('results', PART_ID + '.yaml'), 'r'))
+    data = load(open(join('results', PART_ID + '.yaml'), 'r'), Loader=Loader)
     SCREEN_RES = get_screen_res()
-    window = visual.Window(SCREEN_RES.values(), fullscr=True, monitor='TestMonitor',
-                           units='pix', screen=0, color='Gainsboro')
+    window = visual.Window(list(SCREEN_RES.values()), fullscr=True, units='pix', screen=0, color='Gainsboro')
 
     to_label = visual.TextStim(window, text=u'To:', color=u'black', height=50, pos=(
         -SCREEN_RES['width'] / 2.0 + VISUAL_OFFSET, SCREEN_RES['height'] / 1.96 - SCREEN_RES['height'] / 3.0))

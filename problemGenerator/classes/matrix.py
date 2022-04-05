@@ -1,6 +1,6 @@
 import random
 import copy
-from parameters import PARAMETERS, PARAMETERS_DICT
+from .parameters import PARAMETERS, PARAMETERS_DICT
 
 
 class Matrix:
@@ -42,7 +42,7 @@ class Matrix:
         self.figures_list = new_figures_list
 
     def change_figures_b(self, number_of_figures_to_change):
-        figures_position = range(len(self.figures_list))
+        figures_position = list(range(len(self.figures_list)))
         random.shuffle(figures_position)
         figures_position = figures_position[:number_of_figures_to_change]
         list_of_parameters_to_change = [3]

@@ -1,10 +1,10 @@
 import csv
 
-from classes.experiment import Experiment
-from classes.block import Block
-from classes.trial import Trial
-from classes.parameters import Trial_type, Instruction_type, Per
-from classes.instruction import Instruction
+from .classes.experiment import Experiment
+from .classes.block import Block
+from .classes.trial import Trial
+from .classes.parameters import Trial_type, Instruction_type, Per
+from .classes.instruction import Instruction
 
 __author__ = 'ociepkam'
 
@@ -12,7 +12,7 @@ __author__ = 'ociepkam'
 def load_csv(filename):
     experiment = []
     number_of_blocks = 0
-    with open(filename, 'rb') as f:
+    with open(filename, 'r') as f:
         spamreader = csv.reader(f)
         head = []
         for row_idx, row in enumerate(spamreader):
@@ -58,7 +58,6 @@ def concrete_experiment(filename, id, sex, age, randomize=True):
                           feedb=trial_info['FEEDB'], wait=trial_info['WAIT_TIME'], exp=trial_info['TYPE'],
                           tip=trial_info.get('TIP'), tip_time=trial_info['TIP_TIME'], answers=eval(trial_info['ANSWERS']))
         else:
-            print trial_info['TYPE']
             raise AssertionError("wrong trial type")
 
         experiment.list_of_blocks[block_number - 1].list_of_experiment_elements.append(trial)

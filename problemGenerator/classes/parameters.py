@@ -1,5 +1,5 @@
 
-FIGURES = range(1, 21)
+FIGURES = list(range(1, 21))
 ROTATION = [0, 90, 180, 270]
 BRIGHTNESS = ['white', 'gray', 'slate']
 FRAME = ['thin', 'narrow', 'wide']
