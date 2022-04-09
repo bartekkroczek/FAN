@@ -63,8 +63,8 @@ class Trial:
                     if not self.check_matrix_repeat(new_matrix):
                         self.matrix_list.append(new_matrix)
                         break
-        self.shuffle_all_matrix()
-        self.matrix_c.shuffle_matrix()
+        # self.shuffle_all_matrix()
+        # self.matrix_c.shuffle_matrix()
         random.shuffle(self.matrix_list)
         self.matrix_list = [self.matrix_a.return_figure_list(), self.matrix_b.return_figure_list(),
                             self.matrix_c.return_figure_list()] + [x.return_figure_list() for x in self.matrix_list]
@@ -103,7 +103,7 @@ class Trial:
         self.matrix_b.change_figures_b(self.rel)
         for figure in self.matrix_b.figures_list:
             self.list_of_changes.append(figure.elements_changed)
-        self.matrix_b.shuffle_matrix()
+        # self.matrix_b.shuffle_matrix()
         # random.shuffle(self.list_of_changes)
         self.matrix_b.name = "B"
 

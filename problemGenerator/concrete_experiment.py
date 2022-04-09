@@ -27,9 +27,9 @@ def load_csv(filename):
                         trial.update({str(head[column_idx]): int(column)})
                     except:
                         trial.update({str(head[column_idx]): str(column)})
-                if trial["BLOCK_NUMBER"] > number_of_blocks and trial["BLOCK_NUMBER"] is not "":
+                if (trial["BLOCK_NUMBER"] > number_of_blocks) and trial["BLOCK_NUMBER"] != "":
                     number_of_blocks = trial["BLOCK_NUMBER"]
-                if trial['BLOCK_NUMBER'] is not "":
+                if trial['BLOCK_NUMBER'] != "":
                     experiment.append(trial)
     return number_of_blocks, experiment
 

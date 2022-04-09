@@ -128,6 +128,7 @@ if __name__ == '__main__':
     concrete_experiment(join('problemGenerator', 'experiment.csv'), info['Part_id'], info['Part_sex'], info['Part_age'])
     data = load(open(join('results', PART_ID + '.yaml'), 'r'), Loader=Loader)
     SCREEN_RES = get_screen_res()
+    print(SCREEN_RES)
     window = visual.Window(list(SCREEN_RES.values()), fullscr=True, units='pix', screen=0, color='Gainsboro')
 
     to_label = visual.TextStim(window, text=u'To:', color=u'black', height=50, pos=(
@@ -180,7 +181,7 @@ if __name__ == '__main__':
             for solution, shift in zip(solutions, shifts):
                 solution.setPos(shift)
             figures.extend(solutions)
-            timer = core.CountdownTimer(trial['time'])
+            timer = core.CountdownTimer(trial['time'] // 10)
             [fig.setAutoDraw(True) for fig in figures]
             mouse = event.Mouse()
             choosed_option = -1
