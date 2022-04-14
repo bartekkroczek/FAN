@@ -129,7 +129,7 @@ if __name__ == '__main__':
     data = load(open(join('results', PART_ID + '.yaml'), 'r'), Loader=Loader)
     SCREEN_RES = get_screen_res()
     print(SCREEN_RES)
-    window = visual.Window(list(SCREEN_RES.values()), fullscr=True, units='pix', screen=0, color='Gainsboro')
+    window = visual.Window(list(SCREEN_RES.values()), fullscr=False, units='pix', screen=0, color='Gainsboro')
 
     to_label = visual.TextStim(window, text=u'To:', color=u'black', height=50, pos=(
         -SCREEN_RES['width'] / 2.0 + VISUAL_OFFSET, SCREEN_RES['height'] / 1.96 - SCREEN_RES['height'] / 3.0))
@@ -172,6 +172,8 @@ if __name__ == '__main__':
             solutions = [
                 StimulusCanvas(window, trial['matrix_info'][i]['parameters'], scale=SCALE, frame_color=u'dimgray') for i
                 in range(3, 9)]
+            [print(f"{i}:{trial['matrix_info'][i]['parameters']}") for i in range(3, 9)]
+                # TODO: Relacje sie gybia??? 4
             [solution.setPos((150, 0)) for solution in solutions]
 
             shifts = [(-SCREEN_RES['width'] / 4.0, SCREEN_RES['height'] / 6.0), (0, SCREEN_RES['height'] / 6.0),
@@ -181,7 +183,7 @@ if __name__ == '__main__':
             for solution, shift in zip(solutions, shifts):
                 solution.setPos(shift)
             figures.extend(solutions)
-            timer = core.CountdownTimer(trial['time'] // 10)
+            timer = core.CountdownTimer(trial['time'])
             [fig.setAutoDraw(True) for fig in figures]
             mouse = event.Mouse()
             choosed_option = -1

@@ -4,23 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27e8a42f-f2e5-426e-8baf-6cdc099c351b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/gMALE20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/gMALE20_beh.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/hMALE20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/hMALE20_beh.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FAN.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FAN.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="27e8a42f-f2e5-426e-8baf-6cdc099c351b" name="Changes" comment="Prep for study Y">
+      <change afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problemGenerator/classes/trial.py" beforeDir="false" afterPath="$PROJECT_DIR$/problemGenerator/classes/trial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problemGenerator/concrete_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/problemGenerator/concrete_experiment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/problemGenerator/experiment.csv" beforeDir="false" afterPath="$PROJECT_DIR$/problemGenerator/experiment.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/MALE20.log" beforeDir="false" afterPath="$PROJECT_DIR$/results/MALE20.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/MALE20.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/results/MALE20.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/MALE20_beh.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/MALE20_beh.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/gMALE20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/gMALE20_beh.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/hMALE20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/hMALE20_beh.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/testololoMALE20.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/testololoMALE20_beh.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/testololoMALE20_triggermap.txt" beforeDir="false" />
+    </list>
+    <list id="b93c3f52-e0a3-4cd6-a8c1-3957667de133" name="Changes by poia" comment="">
+      <change beforePath="$PROJECT_DIR$/problemGenerator/classes/matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/problemGenerator/classes/matrix.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,16 +81,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\barte\Projects\FAN" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.scratch (1)">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FAN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,6 +111,72 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="matrix" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FAN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/problemGenerator/classes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/problemGenerator/classes/matrix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FAN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FAN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\barte\Projects\FAN\scratch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,7 +209,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scratch (1)" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.matrix" />
+        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.trial" />
       </list>
     </recent_temporary>
@@ -155,8 +231,24 @@
       <workItem from="1649424172100" duration="762000" />
       <workItem from="1649436492761" duration="213000" />
       <workItem from="1649436967494" duration="140000" />
-      <workItem from="1649495848374" duration="6942000" />
+      <workItem from="1649495848374" duration="6987000" />
+      <workItem from="1649512552986" duration="1277000" />
+      <workItem from="1649605098424" duration="1575000" />
+      <workItem from="1649675662008" duration="304000" />
+      <workItem from="1649678135688" duration="3919000" />
+      <workItem from="1649700232000" duration="1639000" />
+      <workItem from="1649755031583" duration="1308000" />
+      <workItem from="1649842414365" duration="3999000" />
+      <workItem from="1649923465927" duration="2457000" />
     </task>
+    <task id="LOCAL-00001" summary="Prep for study Y">
+      <created>1649507461522</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649507461522</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,9 +267,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Prep for study Y" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prep for study Y" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/problemGenerator/classes/matrix.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FAN$trial.coverage" NAME="trial Coverage Results" MODIFIED="1649436545445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/problemGenerator/classes" />
-    <SUITE FILE_PATH="coverage/FAN$main.coverage" NAME="main Coverage Results" MODIFIED="1649506710358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FAN$scratch__1_.coverage" NAME="scratch (1) Coverage Results" MODIFIED="1649925638652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FAN$matrix.coverage" NAME="matrix Coverage Results" MODIFIED="1649866722712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/problemGenerator/classes" />
+    <SUITE FILE_PATH="coverage/FAN$main.coverage" NAME="main Coverage Results" MODIFIED="1649925592333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FAN$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1649844877119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>

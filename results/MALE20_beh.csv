@@ -1,1 +1,5 @@
 choosed_option,ans_accept,rt,corr,time,rel,feedb,wait,exp,type
+D3,True,2.2682489000144415,False,90,4,0,5,training,trial
+D3,True,1.2178871000069194,False,90,4,0,5,training,trial
+D5,True,19.809792600019136,False,90,4,0,5,experiment,trial
+D4,True,8.251309599989327,False,90,4,0,5,experiment,trial

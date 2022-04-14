@@ -99,6 +99,7 @@ class Matrix:
         for idx, figure in enumerate(list_of_changes):
             if figure == figure_elements_to_change:
                 for name, _ in figure_elements_to_change:
+                    # TODO: Coś dziwnego Michałku! Czemu ponizsza funkcja nie przyjmuje wartości o która ma zmienić
                     self.figures_list[idx].change_parameter(name)
                 break
         self.name = "D4"
